@@ -18,11 +18,7 @@ export class CoepianComponent implements OnInit {
 
     // headers2.append('Access-Control-Allow-Origin', 'http://localhost:4200');
     // headers2.append('Access-Control-Allow-Credentials', 'true');
-    axios.get('http://localhost:9000/',{
-      headers:{
-        'Access-Control-Allow-Origin': 'http://localhost:4200'
-      }
-    })
+    axios.get('https://smart-parking-system-server.vercel.app/')
     .then((resp)=>{
       console.log(resp.data)
     });
